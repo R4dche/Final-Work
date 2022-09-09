@@ -1,0 +1,52 @@
+#con,
+#cust,
+#inno,
+#busi{
+    display: none;
+}
+.con,
+.cust,
+.inno,
+.busi{
+    display: none;
+}
+#con:checked{
+    &~.main__hero-text .con{
+        display: block;
+    }
+    &~.main__hero-label [for="con"]{
+        background: red;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+#cust:checked{
+    &~.main__hero-text .cust{
+        display: block;
+    }
+    &~.main__hero-label [for="cust"]{
+        background: red;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+#inno:checked{
+    &~.main__hero-text .inno{
+        display: block;
+    }
+    &~.main__hero-label [for="inno"]{
+        background: red;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+#busi:checked{
+    &~.main__hero-text .busi{
+        display: block;
+    }
+    &~.main__hero-label [for="busi"]{
+        background: red;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
