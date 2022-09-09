@@ -50,6 +50,13 @@
         display: flex;
         align-items: center;
     }
+    .none{
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
     &__lang{
         display: flex;
         font-size: 12px;
@@ -90,14 +97,12 @@
         margin: 0 6px;
     }
     &__menu{
-
-        display: flex;
-        justify-content: flex-end;
-        margin-right: -15px;
-        padding: 17px 0 0;
+        display: none;
 
         @media (min-width:768px) {
+            display: flex;
             justify-content: flex-start;
+            margin-right: -15px;
             padding: 29px 0 0;
         }
         @media (min-width:1024px){

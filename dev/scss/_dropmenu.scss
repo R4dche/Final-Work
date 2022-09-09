@@ -1,0 +1,46 @@
+#dropmenu{
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+
+    &:checked{
+        ~ .header__menu{
+            display: block;
+        }
+    }
+}
+.dropmenu{
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    &:after,
+    &:before,
+    span{
+        content: '';
+        display: block;
+        position: absolute;
+        font-size: 0;
+        line-height: 0;
+        height: 2px;
+        left: 7px;
+        right: 7px;
+        background: $basic-white;
+    }
+
+    &:before{
+        top: 10px;
+    }
+    &:after{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    span{
+        bottom: 10px;
+    }
+}
