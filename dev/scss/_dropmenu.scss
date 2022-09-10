@@ -10,10 +10,12 @@
     }
 }
 .dropmenu{
+    // float: right;
+    position: relative;
     display: block;
     width: 32px;
     height: 32px;
-    position: relative;
+    margin: 22px;
 
     @media (min-width: 768px) {
         display: none;

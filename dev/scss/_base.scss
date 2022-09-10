@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+#wrapper{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
 body{
     margin: 0;
     font-family: 'montserrat';
@@ -10,9 +15,9 @@ body{
     background: #000;
 }
 .container{
-    max-width: 1350px;
+    max-width: 1380px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 a{
     text-decoration: none;
@@ -20,6 +25,11 @@ a{
 p{
     margin: 0;
     padding: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
 }
 ul{
     list-style: none;
