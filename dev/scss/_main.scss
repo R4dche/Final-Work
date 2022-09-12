@@ -21,6 +21,12 @@
     &__symbol-h1{
         position: absolute;
         align-self: center;
+
+        @media (max-width: 767px) {
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
     }
     &__hero{
         display: flex;
@@ -61,5 +67,12 @@
         line-height: 17px;
         letter-spacing: 1px;
         color: #24A3FF; 
+    }
+}
+.swiper{
+    display: block;
+    
+    @media (min-width: 768px) {
+        display: none;
     }
 }

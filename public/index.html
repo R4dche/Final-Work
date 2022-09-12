@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Final-work</title>
 </head>
@@ -51,6 +52,19 @@
                 <div class="main__symbol">
                     <h1 class="main__symbol-h1">you legal solutions provider</h1>
                     <img class="main__symbol-img" src="./images/Symbol.png" alt="Symbol">
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                    </div>
                 </div>
                 <div class="main__hero">
                     <input id="con" type="radio" name="hero__radio" checked>
@@ -166,5 +180,8 @@
             </main>
             </div>
     </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {});
+      </script>
 </body>
 </html>
