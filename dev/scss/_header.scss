@@ -3,13 +3,14 @@
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
 }
 .header{
     display: flex;
     justify-content: space-between;
     padding: 51px 0 0 0;
     font-weight: 700;
+    // position: absolute;
     
     &__menu-ul{
 
@@ -62,7 +63,6 @@
 
         &:hover{
             background: $hover-lang;
-            padding: 5px 8px;
             border-radius: 8px;
             transition: all 0.8s;
         }
@@ -90,23 +90,34 @@
         margin: 0 6px;
     }
     &__menu{
-        display: none;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 46px;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: all 1s;
+        border-radius: 10px;
+        text-align: center;
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        justify-content: center;
+        flex-direction: column;
+        width: 150px;
+        height: 150px;
 
-        @media (max-width:767px) {
-            position: fixed;
-            top: 0;
-            left: 50%;
-            right: 50%;
-            transform: translateX(-50%);
-            padding: 0;
-            margin: 0 auto;
-            text-align: center;
-        }
         @media (min-width: 768px) {
+            opacity: 1;
+            visibility: visible;
+            position: static;
             display: flex;
             justify-content: flex-end;
             margin: 0 -15px;
             padding: 16px 0 0 0;
+            background: none;
+            flex-direction: row;
         }
 
         &-a{
@@ -137,8 +148,15 @@
         }
     }
     &__menu-list{
-        padding-right: 15px;
         position: relative;
+        opacity: 0;
+        transform: translateY(-50px);
+
+        @media (min-width: 768px) {
+            padding-right: 15px;
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
     &__a{
         display: block;
