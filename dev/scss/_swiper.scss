@@ -1,7 +1,25 @@
+.swiper{
+    display: block;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
 .slide-title{
-    h2{
-        background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+        background: $gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.text-swiper{
+    color: $basic-white;
+}
+.swiper-scrollbar{
+    cursor: pointer;
+    background: $gradient;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: transparent;
 }
