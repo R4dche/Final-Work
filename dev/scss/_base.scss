@@ -55,9 +55,22 @@ h1{
     color: $basic-white;
 }
 h2{
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 46px;
+    line-height: calc(46 / 38);
+    font-size: 30px;
+    
+    @media (min-width: 768px) {
+        font-weight: 700;
+        font-size: 38px;
+    }
+}
+h3{
+    line-height: calc(37 / 30);
+    font-size: 20px;
+
+    @media (min-width: 768px) {
+        font-weight: 700;
+        font-size: 30px;
+    }
 }
 h4{
     font-weight: 700;
