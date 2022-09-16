@@ -1,0 +1,65 @@
+.main__partners{
+    background: $basic-white;
+
+    &-h5{
+        color: $h5;
+        padding: 60px 0 30px 0;
+        text-align: center;
+    }
+
+    &-svg{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        &-block{
+            width: 360px;
+            height: 120px;
+            position: relative;
+        }
+        
+        &-img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 12px 0px 0px 0px;
+        }
+
+        &-hillel{
+            background:$hillel;
+        }
+        &-wannabiz{
+            background: $wannabiz;
+        }
+        &-tapgerine{
+            background: $tapgerine;
+        }
+        &-3dlook{
+            background: $dlook;
+        }
+        &-orangear{
+            background: $orangear;
+        }
+        &-adtelligent{
+            background: $adtelligent;
+        }
+        &-clickky{
+            background: $clickky;
+        }
+        &-eco-leasing{
+            background: $eco-leasing;
+        }
+        &-ingratek{
+            background: $ingratek;
+        }
+        &-city-par{
+            background: $city-par;
+        }
+        &-artprint{
+            background: $artprint;
+        }
+        &-ultimatecard{
+            background: $black;
+        }
+    }
+}

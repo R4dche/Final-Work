@@ -38,13 +38,15 @@
         padding: 0 30px 30px 30px;
 
         @media (min-width: 768px) {
-            width: calc(100% / 3);
+            width: calc(100% / 2);
             padding: 0 30px 60px 30px;
+        }
+        @media (min-width: 992px) {
+            width: calc(100% / 3);
         }
     }
     &-card{
         width: 100%;
-        max-width: 400px;
     }
     &-img{
         display: flex;

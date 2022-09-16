@@ -4,7 +4,7 @@
     visibility: hidden;
 
     &:checked{
-        ~ .header__menu{
+        ~ .head .header__menu{
             opacity: 1;
             visibility: visible;
 
@@ -27,9 +27,9 @@
                 }
             }
         }
-        // + .main__symbol-h1{
-        //     display: none;
-        // }
+        ~ .main .main__symbol-h1{
+            display: none;
+        }
     }
 }
 .dropmenu{
