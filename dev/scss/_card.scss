@@ -67,3 +67,40 @@
         padding-top: 15px;
     }
 }
+
+.main__card-site{
+    background: $footer;
+    
+    &-ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    &-li{
+        background: $basic-white;
+    }
+    &-date{
+        color: $grey;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        border-bottom: 4px solid $border;
+    }
+    &-text{
+        padding-top: 15px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &-content{
+        padding: 30px;
+
+        a{
+            color: $active-reg;
+        }
+        h6{
+            padding-bottom: 15px;
+        }
+    }
+}

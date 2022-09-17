@@ -21,7 +21,7 @@ let myTextSwiper = new Swiper('.text-swiper',{
 });
 let myTeamSwiper = new Swiper ('.swiper-team',{
     slidesPerView: 1,
-    spaceBetween: 40,
+    spaceBetween: 60,
     mousewheel: {
         sensitivity: 1,
     },

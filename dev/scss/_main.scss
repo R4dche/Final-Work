@@ -82,4 +82,17 @@
     &__team{
         background: $basic-white;
     }
+    .last{
+        background: $footer;
+
+        h2{
+            background: $gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 0 0 30px 0;
+        }
+        p{
+            padding: 0 0 10px 0;
+        }
+    }
 }

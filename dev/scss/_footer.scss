@@ -1,0 +1,58 @@
+.footer__main{
+    background: $footer;
+    padding: 30px;
+}
+.footer__list{
+    display: grid;
+    padding: 30px 0 0 0;
+    border-top: 2px solid $border-f;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "a l"
+    "c .";
+
+    &-address{
+        display: flex;
+        grid-area: a;
+        padding: 0 0 20px 0;
+        align-items: center;
+    }
+    &-contact{
+        display: flex;
+        align-items: center;
+        grid-area: c;
+    }
+    &-llc{
+        text-align: end;
+        grid-area: l;
+        color: $grey;
+
+        a{
+            text-transform: uppercase;
+        }
+    }
+    &-span{
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $grey;
+        margin: 0 10px;
+    }
+    &-social{
+        font-size: 38px;
+        color: $active-reg;
+    }
+    &-tell{
+        font-weight: 700;
+        color: $a-f;
+    }
+    &-a{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        color: $active-reg;
+        text-transform: uppercase;
+    }
+}
