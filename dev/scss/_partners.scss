@@ -11,10 +11,17 @@
 
     &-svg{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+
+        @media (min-width:600px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width:768px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
 
         &-block{
-            width: 360px;
+            width: 100%;
             height: 120px;
             position: relative;
         }
@@ -47,21 +54,51 @@
         }
         &-clickky{
             background: $clickky;
+            display: none;
+
+            @media (min-width:600px) {
+                display: block;
+            }
         }
         &-eco-leasing{
             background: $eco-leasing;
+            display: none;
+            
+            @media (min-width:600px) {
+                display: block;
+            }
         }
         &-ingratek{
             background: $ingratek;
+            display: none;
+            
+            @media (min-width:600px) {
+                display: block;
+            }
         }
         &-city-par{
             background: $city-par;
+            display: none;
+            
+            @media (min-width:600px) {
+                display: block;
+            }
         }
         &-artprint{
             background: $artprint;
+            display: none;
+            
+            @media (min-width:600px) {
+                display: block;
+            }
         }
         &-ultimatecard{
             background: $black;
+            display: none;
+            
+            @media (min-width:600px) {
+                display: block;
+            }
         }
     }
 }

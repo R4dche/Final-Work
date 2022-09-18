@@ -4,48 +4,95 @@
 }
 .footer__list{
     display: grid;
+    gap: 10px;
     padding: 30px 0 0 0;
     border-top: 2px solid $border-f;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-areas: 
-    "a l"
-    "c .";
+    "a"
+    "c"
+    "l";
+
+    @media (min-width:690px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "a l"
+        "c .";
+    }
 
     &-address{
-        display: flex;
-        grid-area: a;
-        padding: 0 0 20px 0;
-        align-items: center;
+        display: block;
+        padding: 0 0 10px 0;
+        text-align: center;
+
+        
+        @media (min-width:690px) {
+            align-items: center;
+            display: flex;
+            grid-area: a;
+            padding: 0 0 20px 0;
+        }
     }
     &-contact{
-        display: flex;
+        display: block;
         align-items: center;
-        grid-area: c;
+        grid-row: 2/3;
+        text-align: center;
+        padding: 0 0 10px 0;
+
+
+        @media (min-width:690px) {
+            display: flex;
+            grid-area: c;
+            grid-column: 1/-1;
+            padding: 0;
+        }
     }
     &-llc{
         text-align: end;
         grid-area: l;
         color: $grey;
+        text-align: center;
 
         a{
             text-transform: uppercase;
         }
     }
     &-span{
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: $grey;
-        margin: 0 10px;
+        display: none;
+
+        @media (min-width:690px) {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: $grey;
+            margin: 0 10px;
+        }
     }
     &-social{
+        display: block;
         font-size: 38px;
         color: $active-reg;
+        padding: 0 0 10px 0;
+        
+        @media (min-width:690px) {
+            display: inline-block;
+            padding: 0;
+        }
     }
     &-tell{
+        display: block;
         font-weight: 700;
         color: $a-f;
+        padding: 0 0 10px 0;
+
+        @media (min-width:690px) {
+            display: inline-block;
+            padding: 0;
+        }
     }
     &-a{
         font-weight: 700;
