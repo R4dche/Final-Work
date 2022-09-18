@@ -4,6 +4,9 @@
     visibility: hidden;
 
     &:checked{
+        ~ .head .dropmenu{
+            position: fixed;
+        }
         ~ .head .header__menu{
             opacity: 1;
             visibility: visible;

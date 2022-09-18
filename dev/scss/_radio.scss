@@ -43,6 +43,7 @@
 #busi:checked{
     &~.main__hero-text .busi{
         display: block;
+        cursor: pointer;
     }
     &~.main__hero-label [for="busi"]{
         background: $gradient;
