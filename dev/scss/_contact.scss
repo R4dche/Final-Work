@@ -24,14 +24,23 @@
         }
     }
     &__menu{
-        a{
-            color: $active-reg;
+        &-list{
+            a{
+                color: $active-reg;
 
-            &:after{
-                background: $accent;
+                &:after{
+                    background: $accent;
+                }
+                &:hover::after{
+                    background: $accent;
+                }
             }
-            &:hover::after{
-                background: $accent;
+        }
+        &-list:last-child{
+            a{
+                color: $accent;
+                text-decoration: 2px underline;
+                text-underline-offset: 4px;
             }
         }
     }

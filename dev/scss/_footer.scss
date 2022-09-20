@@ -111,6 +111,7 @@
         color: $active-reg;
         text-transform: uppercase;
         position: relative;
+        padding: 10px 0 0 0;
 
         &::after{
             content: '';

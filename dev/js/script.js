@@ -2,7 +2,7 @@ let myTitleSwiper = new Swiper('.title-swiper',{
     slidesPerView: 1,
     breakpoints: {
         600:{
-            slidesPerView: 2
+            slidesPerView: 1.5,
         }
     },
     scrollbar: {
