@@ -119,28 +119,28 @@
             color: $active-reg;
             position: relative;
 
+            &:hover{
+                color: $accent;
+            }
             &::after{
                 content: '';
-                width: 0;
                 position: absolute;
-                left: 0;
-                top: 100%;
-                height: 2px;
                 display: block;
-                background: $active-reg;
-                transition: all .8s;
-            }
-
+                font-size: 0;
+                width: 5px;
+                height: 7px;
+                border: 2px solid $active-reg;
+                transform: translate(80px, -13px) rotate(-45deg);
+                opacity: 1;
+                border-left: transparent;
+                border-top: transparent;
+                background: none;
+                }
             &:hover::after{
-                width: 100%;
-                content:'';
-                position: absolute;
-                left: 0;
-                top: 100%;
-                height: 2px;
-                display: block;
-                background: $active-reg;
-            }
+                border: 2px solid $accent;
+                border-left: transparent;
+                border-top: transparent;
+                }
         }
 
         @media (min-width: 768px) {
@@ -158,6 +158,14 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             padding: 0 0 30px 0;
+        }
+
+        .main__services{
+            a{
+                &::after{
+                    transform: translate(122px, -13px) rotate(-45deg);
+                }
+            }
         }
     }
 }

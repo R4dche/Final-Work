@@ -71,11 +71,55 @@
             &:hover{
                 color: $accent;
             }
+
+            &::before{
+                display: none;
+    
+                @media (min-width:690px) {
+                    content: '';
+                    display: inline-block;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: $basic-white;
+                    margin: 0 10px;
+                    vertical-align: middle;
+                }
+            }
+            &::after{
+                display: none;
+                
+                @media (min-width:690px) {
+                    content: '';
+                    display: inline-block;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: $basic-white;
+                    margin: 0 10px;
+                    vertical-align: middle;
+                }
+            }
         }
     }
     &__info-address{
         font-weight: 400;
         font-style: normal;
+
+        &::before{
+            display: none;
+
+            @media (min-width:690px) {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $basic-white;
+                margin: 0 10px;
+                vertical-align: middle;
+            }
+        }
     }
     &__info-social{
         font-size: 24px;
